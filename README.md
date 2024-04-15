@@ -174,7 +174,7 @@ python eval_planning_3d.py -p irrt_star
 python eval_planning_3d.py -p rrt_star
 ```
 
-### Result Analysis {#result-analysis}
+### Result Analysis
 Run
 ```
 conda activate pngenv

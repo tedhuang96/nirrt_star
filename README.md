@@ -80,6 +80,7 @@ python visualize_data_samples_2d.py
 ### Planning Demo
 - For 2D, run
 ```
+conda activate pngenv
 python demo_planning_2d.py -p nirrt_star -n pointnet2 -c bfs --problem {2D_problem_type} --iter_max 500
 python demo_planning_2d.py -p nrrt_star -n unet --problem {2D_problem_type} --iter_max 500
 python demo_planning_2d.py -p nrrt_star -n pointnet2 --problem {2D_problem_type} --iter_max 500
@@ -90,6 +91,7 @@ where `{2D_problem_type}` can be `random_2d`, `block`, or `gap`. Note `unet` can
 
 - For 3D, run
 ```
+conda activate pngenv
 python demo_planning_3d.py -p nirrt_star -n pointnet2 -c bfs --problem random_3d --iter_max 500
 python demo_planning_3d.py -p nrrt_star -n unet --problem random_3d --iter_max 500
 python demo_planning_3d.py -p nrrt_star -n pointnet2 --problem random_3d --iter_max 500

@@ -29,8 +29,8 @@ for env_config in env_config_list:
 
     visualizer = RRTStarVisualizer(problem['x_start'], problem['x_goal'], problem['env'])
     figure_title = visual_example_token
-    img_filename = os.path.join(img_folderpath, visual_example_token+"_plt.png")
-    visualizer.plot_scene_path(path, figure_title, img_filename) # red start star, yellow goal star, red optimal path
+    img_filename =  visual_example_token+"_plt.png"
+    visualizer.plot_scene_path(path, figure_title, img_filename, img_folder=img_folderpath) # red start star, yellow goal star, red optimal path
     print(visual_example_token, " plotted.")
     visual_example_env_img = cv2.imread("data/random_2d/test/env_imgs/{0}.png".format(env_config['img_idx']))
     cv2.circle(visual_example_env_img, problem['x_start'], 5, (0,0,255), -1) # red start round mask

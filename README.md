@@ -69,7 +69,7 @@ unzip nirrt_star-icra24-evaluation.zip
 conda activate pngenv
 python visualize_data_samples_2d.py --visual_example_token 100_2
 ```
-Check out images in `nirrt_star/visualization/img_with_labels_2d/`.
+Check out images in `visualization/img_with_labels_2d/`.
 
 - To visualize all 2D Random World test samples, run
 ```
@@ -87,7 +87,7 @@ python demo_planning_2d.py -p nrrt_star -n pointnet2 --problem {2D_problem_type}
 python demo_planning_2d.py -p irrt_star --problem {2D_problem_type} --iter_max 500
 python demo_planning_2d.py -p rrt_star --problem {2D_problem_type} --iter_max 500
 ```
-where `{2D_problem_type}` can be `random_2d`, `block`, or `gap`. Note `unet` cannot be used for `block`, as `unet` requires `img_height % 32 == 0 and img_width % 32 == 0`, while `block` may change the environment range randomly and does not meet this requirements. Visualizations can be found in `nirrt_star/visualization/planning_demo/`.
+where `{2D_problem_type}` can be `random_2d`, `block`, or `gap`. Note `unet` cannot be used for `block`, as `unet` requires `img_height % 32 == 0 and img_width % 32 == 0`, while `block` may change the environment range randomly and does not meet this requirements. Visualizations can be found in `visualization/planning_demo/`.
 
 - For 3D, run
 ```
@@ -196,7 +196,7 @@ Visualizations are saved in `visualization/evaluation/`.
 
 [rawmarshmellows/pytorch-unet-resnet-50-encoder](https://github.com/rawmarshmellows/pytorch-unet-resnet-50-encoder/blob/master/u_net_resnet_50_encoder.py)
 
-[UCSD CSE 291 Collision Detection material](https://cseweb.ucsd.edu/classes/sp19/cse291-d/Files/CSE291_13_CollisionDetection.pdf)
+[UCSD CSE 291 Collision Detection Material](https://cseweb.ucsd.edu/classes/sp19/cse291-d/Files/CSE291_13_CollisionDetection.pdf)
 
 [Simple Intersection Tests for Games](https://www.gamedeveloper.com/game-platforms/simple-intersection-tests-for-games)
 

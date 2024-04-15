@@ -1,0 +1,20 @@
+random_seed: 100
+xyz_max: [50, 50, 50]
+box_size_range: [8, 20]
+ball_radius_range: [8, 12]
+num_boxes_range: [6, 10]
+num_balls_range: [6, 10]
+astar_resolution: 1
+path_clearance: 2
+start_goal_dim_distance_limit: 50
+start_goal_sampling_attempt_count: 1000
+num_samples_per_env: 1
+train_env_size: 4000
+val_env_size: 500
+test_env_size: 500
+redundant_env_size_scale: 1.5
+n_points: 4096
+over_sample_scale: 5
+start_radius: 5
+goal_radius: 5
+path_radius: 5

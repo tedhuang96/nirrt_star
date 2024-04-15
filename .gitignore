@@ -1,0 +1,14 @@
+data/
+results/
+*/log*/
+__pycache__/
+*.egg-info/
+*.zip
+*.npz
+*.pth
+*.csv
+*.png
+*.pickle
+*.pt
+*.txt
+*.json

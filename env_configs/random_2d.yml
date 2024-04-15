@@ -1,0 +1,18 @@
+env_height: 224
+env_width: 224
+rectangle_width_range: [16, 24]
+circle_radius_range: [8, 12]
+num_rectangles_range: [8, 12]
+num_circles_range: [8, 12]
+path_clearance: 3
+start_goal_dim_distance_limit: 50
+start_goal_sampling_attempt_count: 100
+num_samples_per_env: 4
+train_env_size: 1000
+val_env_size: 125
+test_env_size: 125
+n_points: 2048
+over_sample_scale: 5
+start_radius: 10
+goal_radius: 10
+path_radius: 10

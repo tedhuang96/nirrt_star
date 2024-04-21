@@ -71,7 +71,7 @@ with open(join("env_configs", config_name+".yml"), 'r') as yaml_file:
 
 img_height, img_width = config['env_height'], config['env_width']
 rectangle_width_range = config['rectangle_width_range']
-circle_radius_range = config['rectangle_width_range']
+circle_radius_range = config['circle_radius_range']
 num_rectangles_range = config['num_rectangles_range']
 num_circles_range = config['num_circles_range']
 path_clearance = config['path_clearance']

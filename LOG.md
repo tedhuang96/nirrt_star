@@ -1,5 +1,9 @@
 # LOG
 
+## 240817
+1. Removed `pip install -e .` from setup instructions in `README.md`. Added the required version of numpy for setup instructions in `README.md`. Tested.
+2. Added ICRA paper link and updated citation in `README.md`.
+
 ## 240421
 1. Fixed typo of `circle_radius_range` in `generate_random_world_env_2d.py`. Adjusted `env_configs/random_2d.yml` to make the 2D configurations still the same as the previous setup, but with no typos.
 

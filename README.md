@@ -6,7 +6,7 @@ This is the implementation of Neural Informed RRT* (NIRRT*), which is the algori
 
 ##### [Zhe Huang](https://tedhuang96.github.io/), [Hongyu Chen](https://www.linkedin.com/in/hongyu-chen-91996b22b), [John Pohovey](https://www.linkedin.com/in/johnp14/), [Katherine Driggs-Campbell](https://krdc.web.illinois.edu/)
 
-[Paper] [[arXiv](https://arxiv.org/abs/2309.14595)] [[Main GitHub Repo](https://github.com/tedhuang96/nirrt_star)] [[Robot Demo GitHub Repo](https://github.com/tedhuang96/PNGNav)] [[Project Google Sites](https://sites.google.com/view/nirrt-star)] [[Presentation on YouTube](https://youtu.be/xys6XxMqFqQ)] [[Robot Demo on YouTube](https://youtu.be/XjZqUJ0ufGA)]
+[[Paper](https://ieeexplore.ieee.org/abstract/document/10611099)] [[arXiv](https://arxiv.org/abs/2309.14595)] [[Main GitHub Repo](https://github.com/tedhuang96/nirrt_star)] [[Robot Demo GitHub Repo](https://github.com/tedhuang96/PNGNav)] [[Project Google Sites](https://sites.google.com/view/nirrt-star)] [[Presentation on YouTube](https://youtu.be/xys6XxMqFqQ)] [[Robot Demo on YouTube](https://youtu.be/XjZqUJ0ufGA)]
 
 All code was developed and tested on Ubuntu 20.04 with CUDA 12.0, conda 23.11.0, Python 3.9.0, and PyTorch 2.0.1. We also offer implmentations on RRT*, Informed RRT*, and Neural RRT* as baselines. 
 
@@ -14,24 +14,26 @@ All code was developed and tested on Ubuntu 20.04 with CUDA 12.0, conda 23.11.0,
 ## Citation
 If you find this repo useful, please cite
 ```
-@article{huang2023neural,
+@inproceedings{huang2024neural,
   title={Neural Informed RRT*: Learning-based Path Planning with Point Cloud State Representations under Admissible Ellipsoidal Constraints},
   author={Huang, Zhe and Chen, Hongyu and Pohovey, John and Driggs-Campbell, Katherine},
-  journal={arXiv preprint arXiv:2309.14595},
-  year={2023}
+  booktitle={2024 IEEE International Conference on Robotics and Automation (ICRA)},
+  pages={8742--8748},
+  year={2024},
+  organization={IEEE}
 }
 ```
 
 ## Setup
+Run
 ```
 conda env create -f environment.yml
 ```
-or
+which is recommended. Or run
 ```
 conda create -n pngenv python=3.9.0
 conda activate pngenv
-pip install -e .
-pip install numpy
+pip install numpy==1.25.0
 pip install pyyaml
 pip install matplotlib
 pip install opencv-python

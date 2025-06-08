@@ -1,5 +1,16 @@
 # LOG
 
+## 250608
+1. Added `environment1.yml` for creating the conda environment `pngenv1` on Ubuntu 22.04 with CUDA 12.8, conda 25.3.1, Python 3.12.0, and PyTorch 2.7.1. Fixed the bug of `weights_only` argument in torch.load.
+```
+conda create -n pngenv1 python==3.12
+conda activate pngenv1
+pip install open3d
+pip3 install torch torchvision --index-url https://download.pytorch.org/whl/cu128
+pip install opencv-python
+```
+Tested on Quick Test section in `README.md`. Haven't tested on training or evaluation yet.
+
 ## 240817
 1. Removed `pip install -e .` from setup instructions in `README.md`. Added the required version of numpy for setup instructions in `README.md`. Tested.
 2. Added ICRA paper link and updated citation in `README.md`.

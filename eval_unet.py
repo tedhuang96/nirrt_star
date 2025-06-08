@@ -53,7 +53,7 @@ print("Datasets are loaded.")
 model = UNet().to(device)
 model_filename = 'results/model_training/unet/checkpoints/best_unet.pt'
 if exists(model_filename):
-    checkpoint = torch.load(model_filename)
+    checkpoint = torch.load(model_filename, weights_only=False)
     model.load_state_dict(checkpoint)
 else:
     raise RuntimeError

@@ -21,7 +21,7 @@ class GNGWrapper:
         """
         self.model = UNet().to(device)
         model_filepath = join(root_dir, 'results/model_training/unet/checkpoints/best_unet.pt')
-        checkpoint = torch.load(model_filepath, map_location=torch.device(device))
+        checkpoint = torch.load(model_filepath, map_location=torch.device(device), weights_only=False)
         self.model.load_state_dict(checkpoint)
         self.model = self.model.eval()
         self.device = device

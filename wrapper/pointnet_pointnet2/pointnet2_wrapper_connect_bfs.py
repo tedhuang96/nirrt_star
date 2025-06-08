@@ -28,7 +28,7 @@ class PNGWrapper:
         #     # 100, 200, 300, 400, 500
         #     model_filepath = join(root_dir, 'wrapper/pointnet_pointnet2/model_weights/pointnet2_sem_seg_msg_pathplan_'+str(random_seed)+'.pth')
         model_filepath = join(root_dir, 'results/model_training/pointnet2_2d/checkpoints/best_pointnet2_2d.pth')
-        checkpoint = torch.load(model_filepath, map_location=torch.device(device))
+        checkpoint = torch.load(model_filepath, map_location=torch.device(device), weights_only=False)
         self.model.load_state_dict(checkpoint['model_state_dict'])
         self.model = self.model.eval()
         self.device = device

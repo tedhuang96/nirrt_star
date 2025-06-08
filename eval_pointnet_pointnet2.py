@@ -94,7 +94,7 @@ def main(args):
 
     MODEL = importlib.import_module('pointnet_pointnet2.models.'+args.model)
     classifier = MODEL.get_model(NUM_CLASSES).cuda()
-    checkpoint = torch.load(experiment_dir+'/checkpoints/best_'+model_name+'.pth')
+    checkpoint = torch.load(experiment_dir+'/checkpoints/best_'+model_name+'.pth', weights_only=False)
     classifier.load_state_dict(checkpoint['model_state_dict'])
     classifier = classifier.eval()
     
